@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 const Softwares = () => {
   return ( 
@@ -17,46 +17,51 @@ const Softwares = () => {
         </section>
 
         <section className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center mt-12">
-        
           <div className="shadow-md rounded-lg p-4 hover:shadow-lg">
-      
             <h3 className="text-xl font-bold mb-2 text-green-700">Enterprise Solutions</h3>
             <p className="text-gray-600">
               Tailored solutions to meet the complex needs of large organizations and enterprises.
             </p>
-            <Link href="/enterprise" className="inline-flex items-center px-4 py-2 rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none">
-              <span>Explore Enterprise Solutions</span>
+            {/* Corrected Link usage */}
+            <Link href="/enterprise">
+              <a className="inline-flex items-center px-4 py-2 rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none">
+                Explore Enterprise Solutions
+              </a>
             </Link>
           </div>
-        
+
           <div className="shadow-md rounded-lg p-4 hover:shadow-lg">
             <h3 className="text-xl font-bold mb-2 text-green-700">Education Solutions</h3>
             <p className="text-gray-600">
               Innovative solutions to enhance learning experiences and streamline educational processes.
             </p>
-            <Link href="/education" className="inline-flex items-center px-4 py-2 rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none">
-              <span>Explore Education Solutions</span>
-            </Link>
+            {/* Example without Link for comparison */}
+            <span>Explore Education Solutions</span>
           </div>
-      
+
           <div className="shadow-md rounded-lg p-4 hover:shadow-lg">
-          
             <h3 className="text-xl font-bold mb-2 text-green-700">E-commerce Solutions</h3>
             <p className="text-gray-600">
               Drive your online business with feature-rich and scalable e-commerce solutions.
             </p>
-            <Link href="/e-commerce" className="inline-flex items-center px-4 py-2 rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none">
-              <span>Explore E-commerce Solutions</span>
+            {/* Corrected Link usage */}
+            <Link href="/e-commerce">
+              <a className="inline-flex items-center px-4 py-2 rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none">
+                Explore E-commerce Solutions
+              </a>
             </Link>
           </div>
-    
+
           <div className="shadow-md rounded-lg p-4 hover:shadow-lg">
             <h3 className="text-xl font-bold mb-2 text-green-700">Mobile Solutions</h3>
             <p className="text-gray-600">
               Mobile app development for a seamless and engaging user experience across platforms.
             </p>
-            <Link href="/mobile-solutions" className="inline-flex items-center px-4 py-2 rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none">
-              <span>Explore Mobile Solutions</span>
+            {/* Corrected Link usage */}
+            <Link href="/mobile-solutions">
+              <a className="inline-flex items-center px-4 py-2 rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none">
+                Explore Mobile Solutions
+              </a>
             </Link>
           </div>
         </section>

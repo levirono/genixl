@@ -8,15 +8,8 @@ const Navbar = () => {
           <img src="genix logo.png" alt="logo" className="max-w-full max-h-full"/>
         </div>
 
-        {/* Hamburger icon for smaller screens */}
-        <div className="md:hidden cursor-pointer">
-          <div className="w-6 h-px bg-black mb-1"></div>
-          <div className="w-6 h-px bg-black mb-1"></div>
-          <div className="w-6 h-px bg-black"></div>
-        </div>
-
-        {/* Links for larger screens */}
-        <div className="hidden md:flex space-x-4 items-center">
+        {/* Links for all screen sizes */}
+        <div className="flex space-x-4 items-center">
           <Link href="/" className="hover:underline">
             Home
           </Link>
@@ -32,7 +25,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="md:hidden flex flex-col items-left mt-4">
+      {/* <div className="md:hidden flex flex-col items-left mt-4">
         <Link href="/" className="mb-2">
           Home
         </Link>
@@ -45,7 +38,7 @@ const Navbar = () => {
         <Link href="/about" className="mb-2 hover:underline">
           About
         </Link>
-      </div>
+      </div> */}
     </nav>
   );
 };
